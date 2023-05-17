@@ -1,0 +1,54 @@
+
+<html>
+<head>
+	<title>Length Converter</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+	<style>
+		table{
+			border-style: ridge;
+			border-color: white;
+		}
+	</style>
+</head>
+<body class="bg-secondary">
+	<center>
+<table class="bg-dark"> 
+<tr> <td>
+	<h5> Millimeter converter </h5>
+<input type="text" id="id1" placeholder="Enter Value (Mm)" class="bg-dark text-light"> <br>
+<input type="submit" value="To Centimeters" onclick="myFunction1()" class="btn-dark text-danger"> <br>
+<input type="submit" value="To Meters" onclick="myFunction2()" class="btn-dark text-danger"> <br>
+<input type="submit" value="To Kilometers" onclick="myFunction3()" class="btn-dark text-danger"> <br>
+<p id="sec1" style="color: CAC9DA;"></p>
+<script>
+	function myFunction1( ) {
+		var num1 = document.getElementById('id1').value;
+		var num2 = 10
+		var answer = Number(num1) / Number(num2);
+		document.getElementById('sec1').innerHTML = "The answer is " + answer + " centimeters";
+	}
+</script>
+<script>
+	function myFunction2( ) {
+		var num1 = document.getElementById('id1').value;
+		var num2 = 1000
+		var answer = Number(num1) / Number(num2);
+		document.getElementById('sec1').innerHTML = "The answer is " + answer + " meters";
+	}
+</script>
+<script>
+	function myFunction3( ) {
+		var num1 = document.getElementById('id1').value;
+		var num2 = 1000000
+		var answer = Number(num1) / Number(num2);
+		document.getElementById('sec1').innerHTML = "The answer is " + answer + " kilometers";
+	}
+</script>
+</td> </tr> </table> <br>
+</center>
+</body>
+</html>
